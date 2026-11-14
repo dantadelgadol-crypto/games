@@ -57,7 +57,7 @@ const palabras = [
     "DESFILE",
 
     "PAN COMIDO",
-    "FELIZ CUMPLEANOS",
+    "FELIZ CUMPLEAÑOS",
     "MAS VALE TARDE QUE NUNCA",
     "ERASE UNA VEZ",
     "ESTAR EN LAS NUBES",
@@ -128,7 +128,7 @@ for (let i = 0; i < palabraSecreta.length; i++) {
 
     if (palabraSecreta[i] === " ") {
 
-        progreso.push(" ");
+        progreso.push("    ");
 
     } else {
 
@@ -163,7 +163,7 @@ for (let letra of letras) {
         }
 
         document.getElementById("palabra")
-        .innerText = progreso.join(" ");
+        .innerText = progreso.join("");
 
         if (!encontrada) {
 
@@ -183,7 +183,7 @@ for (let letra of letras) {
 
                 document.getElementById("palabra")
                 .innerText =
-                progreso.join(" ");
+                progreso.join("");
 
                 desactivarTeclado();
 
