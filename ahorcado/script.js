@@ -229,3 +229,23 @@ function desactivarTeclado() {
         boton.disabled = true;
     });
 }
+
+document.addEventListener("keydown", function(event) {
+
+    let tecla = event.key.toUpperCase();
+
+    let botones =
+    document.querySelectorAll("#teclado button");
+
+    botones.forEach(boton => {
+
+        if(
+            boton.innerText === tecla &&
+            !boton.disabled
+        ){
+            boton.click();
+        }
+
+    });
+
+});
